@@ -15,7 +15,7 @@ def main_entry():
         "--model",
         help="Specify the model to use",
         required=False,
-        default="gpt-4-with-ocr",
+        default="gpt-4-with-ocr"
     )
 
     # Add a voice flag
@@ -38,6 +38,7 @@ def main_entry():
         help="Directly input the objective prompt",
         type=str,
         required=False,
+        default="let's play a game of wordle on safari and try to solve it",
     )
 
     try:
