@@ -1,5 +1,5 @@
 import platform
-from operate.config import Config
+from config import Config
 
 # Load configuration
 config = Config()

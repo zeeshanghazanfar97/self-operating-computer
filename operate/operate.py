@@ -4,16 +4,16 @@ import time
 import asyncio
 from prompt_toolkit.shortcuts import message_dialog
 from prompt_toolkit import prompt
-from operate.exceptions import ModelNotRecognizedException
+from exceptions import ModelNotRecognizedException
 import platform
 
-# from operate.models.prompts import USER_QUESTION, get_system_prompt
-from operate.models.prompts import (
+# from models.prompts import USER_QUESTION, get_system_prompt
+from models.prompts import (
     USER_QUESTION,
     get_system_prompt,
 )
-from operate.config import Config
-from operate.utils.style import (
+from config import Config
+from utils.style import (
     ANSI_GREEN,
     ANSI_RESET,
     ANSI_YELLOW,
@@ -22,8 +22,8 @@ from operate.utils.style import (
     ANSI_BLUE,
     style,
 )
-from operate.utils.operating_system import OperatingSystem
-from operate.models.apis import get_next_action
+from utils.operating_system import OperatingSystem
+from models.apis import get_next_action
 
 # Load configuration
 config = Config()
